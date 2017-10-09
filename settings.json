@@ -1,0 +1,81 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Editor
+
+    // Controls the font family.
+    "editor.fontFamily": "SourceCodePro-regular",
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 12,
+
+    // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+    "editor.renderWhitespace": "all",
+
+    // External Terminal
+
+    // Customizes which terminal application to run on OS X.
+    "terminal.external.osxExec": "iTerm.app",
+
+    // Integrated Terminal
+
+    // Controls the line height of the terminal, this number is multipled by the terminal font size to get the actual line-height in pixels.
+    "terminal.integrated.lineHeight": 1.5,
+
+    // Files
+
+    // Configure glob patterns for excluding files and folders.
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    },
+
+    // Search
+
+    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+    "search.exclude": {
+        "**/libs": true,
+        "**/bower_components": true,
+        "**/node_modules": true
+    },
+
+    // Window
+
+    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+    "window.zoomLevel": 1,
+
+    // Steuert die automatische Speicherung geänderter Dateien. Zulässige Werte: "off", "afterDelay", "onFocusChange" (Editor verliert den Fokus), "onWindowChange" (Fenster verliert den Fokus). Wenn diese Angabe auf "afterDelay" festgelegt ist, können Sie die Verzögerung in "files.autoSaveDelay" konfigurieren.
+    "vsicons.projectDetection.autoReload": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "git.confirmSync": false,
+    "todohighlight.keywords": [
+        "TODO",
+        "FIX",
+        "BUG"
+    ],
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [
+            "css",
+            "scss",
+            "less"
+        ],
+        "html": [
+            "htm",
+            "html",
+            "hbs"
+        ]
+    }
+}
