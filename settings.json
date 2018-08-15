@@ -84,21 +84,5 @@
     // Default style for all customized keywords
     "todohighlight.defaultStyle": {
         "backgroundColor": "yellow"
-    },
-
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": true,
-        "suppressWelcomeNotice": true
-    },
-    "gitlens.keymap": "chorded",
-    "gitlens.historyExplorer.enabled": false,
-    "extensions.ignoreRecommendations": false,
+    }
 }
