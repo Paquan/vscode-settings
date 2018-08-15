@@ -4,22 +4,20 @@
 
     // Controls the font family.
     "editor.fontFamily": "SourceCodePro-regular",
-
     // Controls the font size in pixels.
     "editor.fontSize": 12,
-
     // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
     "editor.renderWhitespace": "all",
+    // Die Anzahl der Leerzeichen, denen ein Tabstopp entspricht. Diese Einstellung wird basierend auf dem Inhalt der Datei überschrieben, wenn `#editor.detectIndentation#` aktiviert ist.
+    "editor.tabSize": 2,
 
     // External Terminal
 
     // Customizes which terminal application to run on OS X.
-    "terminal.external.osxExec": "iTerm.app",
-
+    "terminal.external.osxExec": "terminal.app",
     // Integrated Terminal
+    "terminal.integrated.fontSize": 11,
 
-    // Controls the line height of the terminal, this number is multipled by the terminal font size to get the actual line-height in pixels.
-    "terminal.integrated.lineHeight": 1.5,
 
     // Files
 
@@ -28,7 +26,8 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/package-lock.json": true
     },
 
     // Search
@@ -40,42 +39,66 @@
         "**/node_modules": true
     },
 
+    // Workbench
+
+    // Specifies the color theme used in the workbench.
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    // Gibt das in der Workbench verwendete Symboldesign oder "null", um keine Dateisymbole anzuzeigen, an.
+    "workbench.iconTheme": "vscode-icons",
+    // Steuert, ob geöffnete Editoren als Vorschau angezeigt werden. Vorschau-Editoren werden wiederverwendet, bis sie gespeichert werden (z. B. über Doppelklicken oder Bearbeiten), und sie werden mit kursivem Schriftschnitt angezeigt.
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+
+
     // Window
 
     // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
     "window.zoomLevel": 1,
 
-    // Steuert die automatische Speicherung geänderter Dateien. Zulässige Werte: "off", "afterDelay", "onFocusChange" (Editor verliert den Fokus), "onWindowChange" (Fenster verliert den Fokus). Wenn diese Angabe auf "afterDelay" festgelegt ist, können Sie die Verzögerung in "files.autoSaveDelay" konfigurieren.
-    "vsicons.projectDetection.autoReload": true,
-    "vsicons.dontShowNewVersionMessage": true,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.iconTheme": "vscode-icons",
+    // Explorer
+
+    // Steuert, ob der Explorer um Bestätigung bittet, um Dateien und Ordner per Drag & Drop zu verschieben.
+    "explorer.confirmDragAndDrop": false,
+
+    // GIT
+
+    // Vor dem Synchronisieren von Git-Repositorys bestätigen.
     "git.confirmSync": false,
+
+    // VS-Icons
+
+    // Wenn auf 'true' gesetzt, wird die Erweiterung nach Erkennen eines Projektes Code automatisch neu starten.
+    "vsicons.projectDetection.autoReload": true,
+    // Wenn auf 'true' gesetzt, zeigt die Erweiterung keine Benachrichtigung nach dem Installieren einer neuen Version an.
+    "vsicons.dontShowNewVersionMessage": true,
+
+    // TODO Highlight
+
+    // Customize keywords and colors. Any css color identifier is valid.
     "todohighlight.keywords": [
         "TODO",
+        "FIXME",
         "FIX",
+        "HACK",
         "BUG"
     ],
-    "beautify.language": {
-        "js": {
-            "type": [
-                "javascript",
-                "json"
-            ],
-            "filename": [
-                ".jshintrc",
-                ".jsbeautify"
-            ]
-        },
-        "css": [
-            "css",
-            "scss",
-            "less"
-        ],
-        "html": [
-            "htm",
-            "html",
-            "hbs"
-        ]
-    }
+    // Default style for all customized keywords
+    "todohighlight.defaultStyle": {
+        "backgroundColor": "yellow"
+    },
+
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "gitlens.keymap": "chorded",
+    "gitlens.historyExplorer.enabled": false,
+    "extensions.ignoreRecommendations": false,
 }
