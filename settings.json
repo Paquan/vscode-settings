@@ -84,5 +84,6 @@
     // Default style for all customized keywords
     "todohighlight.defaultStyle": {
         "backgroundColor": "yellow"
-    }
+    },
+    "prettier.singleQuote": true,
 }
