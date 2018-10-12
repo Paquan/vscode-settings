@@ -1,89 +1,101 @@
 // Place your settings in this file to overwrite the default settings
 {
-    // Editor
+  // Editor
+  // ------
+  // Controls the font family.
+  "editor.fontFamily": "SourceCodePro-regular",
+  // Controls the font size in pixels.
+  "editor.fontSize": 12,
+  // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+  "editor.renderWhitespace": "all",
+  // Die Anzahl der Leerzeichen, denen ein Tabstopp entspricht. Diese Einstellung wird basierend auf dem Inhalt der Datei überschrieben, wenn `#editor.detectIndentation#` aktiviert ist.
+  "editor.tabSize": 2,
 
-    // Controls the font family.
-    "editor.fontFamily": "SourceCodePro-regular",
-    // Controls the font size in pixels.
-    "editor.fontSize": 12,
-    // Controls how the editor should render whitespace characters, posibilties are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
-    "editor.renderWhitespace": "all",
-    // Die Anzahl der Leerzeichen, denen ein Tabstopp entspricht. Diese Einstellung wird basierend auf dem Inhalt der Datei überschrieben, wenn `#editor.detectIndentation#` aktiviert ist.
-    "editor.tabSize": 2,
+  // External Terminal
+  // -----------------
+  // Customizes which terminal application to run on OS X.
+  "terminal.external.osxExec": "terminal.app",
+  // Integrated Terminal
+  "terminal.integrated.fontSize": 11,
 
-    // External Terminal
+  // Files
+  // -----
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/package-lock.json": true
+  },
+  // Nutzt die Filespezifikation 'javascriptreact' für JavaScript
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
 
-    // Customizes which terminal application to run on OS X.
-    "terminal.external.osxExec": "terminal.app",
-    // Integrated Terminal
-    "terminal.integrated.fontSize": 11,
+  // Search
+  // ------
+  // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
+  "search.exclude": {
+    "**/libs": true,
+    "**/bower_components": true,
+    "**/node_modules": true
+  },
 
+  // Workbench
+  // ---------
+  // Specifies the color theme used in the workbench.
+  "workbench.colorTheme": "One Dark Pro Vivid",
+  // Gibt das in der Workbench verwendete Symboldesign oder "null", um keine Dateisymbole anzuzeigen, an.
+  "workbench.iconTheme": "vscode-icons",
+  // Steuert, ob geöffnete Editoren als Vorschau angezeigt werden. Vorschau-Editoren werden wiederverwendet, bis sie gespeichert werden (z. B. über Doppelklicken oder Bearbeiten), und sie werden mit kursivem Schriftschnitt angezeigt.
+  "workbench.editor.enablePreviewFromQuickOpen": true,
 
-    // Files
+  // Window
+  // ------
+  // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+  "window.zoomLevel": 1,
 
-    // Configure glob patterns for excluding files and folders.
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/package-lock.json": true
-    },
+  // Explorer
+  // --------
+  // Steuert, ob der Explorer um Bestätigung bittet, um Dateien und Ordner per Drag & Drop zu verschieben.
+  "explorer.confirmDragAndDrop": false,
 
-    // Search
+  // Languages
+  // ---------
+  // Nutzt singleQuotes per default in JavaScript
+  "javascript.preferences.quoteStyle": "single",
+  // ... und TypeScript
+  "typescript.preferences.quoteStyle": "single",
 
-    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
-    "search.exclude": {
-        "**/libs": true,
-        "**/bower_components": true,
-        "**/node_modules": true
-    },
+  // GIT
+  // ---
+  // Vor dem Synchronisieren von Git-Repositorys bestätigen.
+  "git.confirmSync": false,
 
-    // Workbench
+  // VS-Icons
+  // --------
+  // Wenn auf 'true' gesetzt, wird die Erweiterung nach Erkennen eines Projektes Code automatisch neu starten.
+  "vsicons.projectDetection.autoReload": true,
+  // Wenn auf 'true' gesetzt, zeigt die Erweiterung keine Benachrichtigung nach dem Installieren einer neuen Version an.
+  "vsicons.dontShowNewVersionMessage": true,
 
-    // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "One Dark Pro Vivid",
-    // Gibt das in der Workbench verwendete Symboldesign oder "null", um keine Dateisymbole anzuzeigen, an.
-    "workbench.iconTheme": "vscode-icons",
-    // Steuert, ob geöffnete Editoren als Vorschau angezeigt werden. Vorschau-Editoren werden wiederverwendet, bis sie gespeichert werden (z. B. über Doppelklicken oder Bearbeiten), und sie werden mit kursivem Schriftschnitt angezeigt.
-    "workbench.editor.enablePreviewFromQuickOpen": true,
+  // Prettier
+  // --------
+  // Ersetzt doubleQuotes durch singleQuotes
+  "prettier.singleQuote": true,
 
+  // TODO Highlight
+  // --------------
+  // Customize keywords and colors. Any css color identifier is valid.
+  "todohighlight.keywords": ["TODO", "FIXME", "FIX", "HACK", "BUG"],
 
-    // Window
-
-    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
-    "window.zoomLevel": 1,
-
-    // Explorer
-
-    // Steuert, ob der Explorer um Bestätigung bittet, um Dateien und Ordner per Drag & Drop zu verschieben.
-    "explorer.confirmDragAndDrop": false,
-
-    // GIT
-
-    // Vor dem Synchronisieren von Git-Repositorys bestätigen.
-    "git.confirmSync": false,
-
-    // VS-Icons
-
-    // Wenn auf 'true' gesetzt, wird die Erweiterung nach Erkennen eines Projektes Code automatisch neu starten.
-    "vsicons.projectDetection.autoReload": true,
-    // Wenn auf 'true' gesetzt, zeigt die Erweiterung keine Benachrichtigung nach dem Installieren einer neuen Version an.
-    "vsicons.dontShowNewVersionMessage": true,
-
-    // TODO Highlight
-
-    // Customize keywords and colors. Any css color identifier is valid.
-    "todohighlight.keywords": [
-        "TODO",
-        "FIXME",
-        "FIX",
-        "HACK",
-        "BUG"
-    ],
-    // Default style for all customized keywords
-    "todohighlight.defaultStyle": {
-        "backgroundColor": "yellow"
-    },
-    "prettier.singleQuote": true,
+  // GitLens
+  //--------
+  // Specifies which messages should be suppressed
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": true
+  }
 }
