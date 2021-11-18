@@ -1,32 +1,55 @@
-// Place your settings in this file to overwrite the default settings
 {
-  // Style
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Relaxed",
-  
   // Editor
+  "editor.columnSelection": false,
   "editor.fontFamily": "SourceCodePro-regular",
+  "editor.multiCursorModifier": "alt",
   "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.useTabStops": false,
-  "editor.suggestSelection": "first",
-  
-  // Languages
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+
+  // Excluded files
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.implicitProjectConfig.checkJs": true,
-  
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  
+
   // Prettier
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Style
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Relaxed",
+
+  // JavaScript
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true
 }
