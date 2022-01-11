@@ -1,12 +1,24 @@
 {
   // Editor
   "editor.columnSelection": false,
+  "editor.cursorBlinking": "expand",
   "editor.fontFamily": "SourceCodePro-regular",
   "editor.multiCursorModifier": "alt",
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.useTabStops": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestionsDelay": 1000,
+  "editor.hover.delay": 1000,
+
+  // Style and theme
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Relaxed",
+  "workbench.hover.delay": 1000,
 
   // Explorer
   "explorer.confirmDragAndDrop": false,
@@ -44,12 +56,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  // Style
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Relaxed",
-
   // JavaScript
   "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "js/ts.implicitProjectConfig.checkJs": true
+  "js/ts.implicitProjectConfig.checkJs": true,
+
+  // TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Git
+  "git.confirmSync": false,
+  "git.autofetch": true
 }
